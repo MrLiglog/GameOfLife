@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Game Of Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <h1>The Game of Life</h1>
+</head>
+<body>
+    <div id="game">
+    <script src="p5.js"></script>
+    <script src="main.js"></script>
+    </div>
+    <div id="control">
+        <button onclick="togglelock()">Start/Pause</button>
+        <button onclick="setup()">Reset</button>
+        <form name="controls">
+        <label>Preset Type:</label><br>
+        <input type="radio" name="setting" value="1" onclick="changeBoard(this.value)">Random<br>
+        <input type="radio" name="setting" value="2" onclick="changeBoard(this.value)">Blank<br>
+        <input type="checkbox" name="grid" value="1" oninput="toggleGrid()">Grid Overlay<br>
+        </script>
+        </form><br>
+    </div>
+</body>
+</html>
